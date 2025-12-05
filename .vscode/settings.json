@@ -1,0 +1,15 @@
+{
+    // クリップボードを使用する
+    "vim.useSystemClipboard": true,
+    // 検索結果をハイライトする
+    "vim.hlsearch": true,
+    // md画像貼り付け時保存先
+    "markdown.copyFiles.destination": {
+        "**/*": "${documentDirName}/img/${documentBaseName}-${unixTime}.${fileExtName}"
+    },
+    // winでctrl+pが働かない問題の回避
+    "terminal.integrated.commandsToSkipShell": [
+        "-workbench.action.quickOpen",
+    ],
+    "javascript.updateImportsOnFileMove.enabled": "always"
+}
