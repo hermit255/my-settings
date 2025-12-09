@@ -1,5 +1,41 @@
 [
 //----------------------------------------------------------
+// エディターにフォーカスしている時の設定 (editor->editorへの移動)
+//----------------------------------------------------------
+// IF実装箇所にコードジャンプ
+{
+"key": "ctrl+j ctrl+i",
+"command": "editor.action.goToImplementation",
+"when": "editorFocus"
+},
+// 宣言箇所に移動
+{
+"key": "ctrl+j ctrl+d",
+"command": "editor.action.goToDeclaration",
+"when": "editorFocus"
+},
+{
+"key": "ctrl+j ctrl+r",
+"command": "editor.action.goToReferences",
+"when": "editorFocus"
+},
+// find --name検索
+{
+"key": "ctrl+w ctrl+f",
+"command": "workbench.action.quickOpen"
+},
+// フルスクリーントグル
+{
+"key": "ctrl+w ctrl+x",
+"command": "workbench.action.toggleFullScreen",
+},
+// タブのプレビュー状態を解除する
+{
+"key": "ctrl+w ctrl+;",
+"command": "workbench.action.keepEditor",
+"when": "editorTextFocus && editorPinned == false"
+},
+//----------------------------------------------------------
 // タブ
 //----------------------------------------------------------
 // 他のタブを閉じる
@@ -178,7 +214,7 @@
     "when": "editorTextFocus && !editorReadOnly && vim.mode == 'Insert'"
 },
 {
-    "key": "j j",
+    "key": "ctrl+j",
     "command": "extension.vim_escape",
     "when": "editorTextFocus && vim.active && vim.mode == 'Insert'"
 },
@@ -414,7 +450,7 @@
 {
     "key": "ctrl+p",
     "command": "-workbench.action.quickOpen"
-},
+}
 //----------------------------------------------------------
 // 未分類
 //----------------------------------------------------------
