@@ -358,6 +358,15 @@
 "command": "cursorBottom",
 "when": "editorTextFocus && vim.mode == 'Normal'"
 },
+// vscodeのAIウインドウ動作-----------------------------------
+{
+    "key": "ctrl+l",
+    "command": "workbench.action.toggleAuxiliaryBar",
+},
+{
+    "key": "ctrl+g ctrl+l",
+    "command": "workbench.action.focusAuxiliaryBar",
+},
 //----------------------------------------------------------
 // git操作
 //----------------------------------------------------------
