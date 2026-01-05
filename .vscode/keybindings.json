@@ -40,418 +40,410 @@
 //----------------------------------------------------------
 // 他のタブを閉じる
 {
-  "key": "ctrl+x",
-  "command": "workbench.action.closeOtherEditors",
-  "when": "editorTextFocus"
+"key": "ctrl+x",
+"command": "workbench.action.closeOtherEditors",
+"when": "editorTextFocus"
 },
 // 左のタブに移動
 {
-    "key": "shift+h",
-    "command": "workbench.action.previousEditor",
-    "when": "editorFocus && vim.mode == 'Normal'"
+"key": "shift+h",
+"command": "workbench.action.previousEditor",
+"when": "editorFocus && vim.mode == 'Normal'"
 },
 // 右のタブに移動
 {
-    "key": "shift+l",
-    "command": "workbench.action.nextEditor",
-    "when": "editorFocus && vim.mode == 'Normal'"
+"key": "shift+l",
+"command": "workbench.action.nextEditor",
+"when": "editorFocus && vim.mode == 'Normal'"
 },
 // 左の分割タブにフォーカス
 {
-  "key": "shift+b",
-  "command": "workbench.action.focusLeftGroup",
-  "when": "editorTextFocus && vim.mode == 'Normal'"
+"key": "shift+b",
+"command": "workbench.action.focusLeftGroup",
+"when": "editorTextFocus && vim.mode == 'Normal'"
 },
 // 右の分割タブにフォーカス
 {
-  "key": "shift+/",
-  "command": "workbench.action.focusRightGroup",
-  "when": "editorTextFocus && vim.mode == 'Normal'"
+"key": "shift+/",
+"command": "workbench.action.focusRightGroup",
+"when": "editorTextFocus && vim.mode == 'Normal'"
 },
 // 相対パスをクリップボードにコピー
 {
-    "key": "ctrl+w ctrl+r",
-    "command": "copyRelativeFilePath",
-    "when": "editorFocus"
+"key": "ctrl+w ctrl+r",
+"command": "copyRelativeFilePath",
+"when": "editorFocus"
 },
-
 //----------------------------------------------------------
 // サイドバー
 //----------------------------------------------------------
 // エクスプローラ
 {
-    "key": "ctrl+w ctrl+e",
-    "command": "workbench.view.explorer"
+"key": "ctrl+w ctrl+e",
+"command": "workbench.view.explorer"
 },
 // grep
 {
-    "key": "ctrl+w ctrl+m",
-    "command": "workbench.action.findInFiles",
-    "when": "!searchInputBoxFocus"
+"key": "ctrl+w ctrl+m",
+"command": "workbench.action.findInFiles",
+"when": "!searchInputBoxFocus"
 },
 // バージョン管理
 {
-    "key": "ctrl+w ctrl+g",
-    "command": "workbench.view.scm"
+"key": "ctrl+w ctrl+g",
+"command": "workbench.view.scm"
 },
 // デバッグ
 {
-    "key": "ctrl+w ctrl+d",
-    "command": "workbench.view.debug"
+"key": "ctrl+w ctrl+d",
+"command": "workbench.view.debug"
 },
 {
-    "key": "ctrl+s",
-    "command": "workbench.action.closeSidebar",
-    "when": "sideBarFocus"
+"key": "ctrl+s",
+"command": "workbench.action.closeSidebar",
+"when": "sideBarFocus"
 },
 // サイドバーにフォーカス
 {
-    "key": "ctrl+s",
-    "command": "workbench.action.focusSideBar",
-    "when": "!sideBarFocus"
+"key": "ctrl+s",
+"command": "workbench.action.focusSideBar",
+"when": "!sideBarFocus"
 },
 // サイドバーへの移動
 {
-    "key": "ctrl+m",
-    "command": "workbench.action.focusSideBar",
-    "when": "!sideBarFocus"
+"key": "ctrl+m",
+"command": "workbench.action.focusSideBar",
+"when": "!sideBarFocus"
 },
 // サイドバーからの移動
 {
-    "key": "ctrl+m",
-    "command": "workbench.action.focusFirstEditorGroup",
-    "when": "!editorFocus"
+"key": "ctrl+m",
+"command": "workbench.action.focusFirstEditorGroup",
+"when": "!editorFocus"
 },
-
 //----------------------------------------------------------
 // パネル
 //----------------------------------------------------------
 // パネル可視/不可視のトグル
 {
-    "key": "ctrl+n",
-    "command": "workbench.action.togglePanel",
-    // "when": "!panelFocus"
+"key": "ctrl+n",
+"command": "workbench.action.togglePanel",
+// "when": "!panelFocus"
 },
 // プロブレム
 {
-    "key": "ctrl+w ctrl+p",
-    "command": "workbench.actions.view.problems",
-    "when": "!panelFocus"
+"key": "ctrl+w ctrl+p",
+"command": "workbench.actions.view.problems",
+"when": "!panelFocus"
 },
 // アウトプット
 {
-    "key": "ctrl+w ctrl+o",
-    "command": "workbench.action.output.toggleOutput",
+"key": "ctrl+w ctrl+o",
+"command": "workbench.action.output.toggleOutput",
 },
 // ターミナル
 {
-    "key": "ctrl+w ctrl+t",
-    "command": "workbench.action.terminal.toggleTerminal",
+"key": "ctrl+w ctrl+t",
+"command": "workbench.action.terminal.toggleTerminal",
 },
 // コンテナサービス
 {
-    "key": "ctrl+w ctrl+s",
-    "command": "workbench.view.extension.containersView",
+"key": "ctrl+w ctrl+s",
+"command": "workbench.view.extension.containersView",
 },
 {
-    "key": "ctrl+w ctrl+a",
-    "command": "workbench.action.toggleAuxiliaryBar"
+"key": "ctrl+w ctrl+a",
+"command": "workbench.action.toggleAuxiliaryBar"
 },
 // マークダウン
 {
-    "key": "ctrl+w ctrl+b",
-    "command": "markdown.showPreviewToSide",
-    "when": "editorLangId == 'markdown'"
+"key": "ctrl+w ctrl+b",
+"command": "markdown.showPreviewToSide",
+"when": "editorLangId == 'markdown'"
 },
 // コマンドパレットオープン(*->コマンドパレット)
 {
-    "key": "ctrl+w ctrl+c",
-    "command": "workbench.action.showCommands"
+"key": "ctrl+w ctrl+c",
+"command": "workbench.action.showCommands"
 },
 // 検索実行後の候補への移動
 {
-    "key": "ctrl+n",
-    "command": "workbench.action.interactivePlayground.arrowDown",
-    "when": "interactivePlaygroundFocus && !editorTextFocus"
+"key": "ctrl+n",
+"command": "workbench.action.interactivePlayground.arrowDown",
+"when": "interactivePlaygroundFocus && !editorTextFocus"
 },
-
 //----------------------------------------------------------
 // AIサイドバー
 //----------------------------------------------------------
 {
-    "key": "ctrl+a",
-    "command": "aichat.close-sidebar",
-    "when": "aichatPosition"
+"key": "ctrl+a",
+"command": "aichat.close-sidebar",
+"when": "aichatPosition"
 },
-
 //----------------------------------------------------------
 // sidebarの検索キャンセル(*->terminal)
 //----------------------------------------------------------
 {
-    "key": "Escape",
-    "command": "list.toggleKeyboardNavigation",
-    "when": "listFocus && listSupportsKeyboardNavigation"
+"key": "Escape",
+"command": "list.toggleKeyboardNavigation",
+"when": "listFocus && listSupportsKeyboardNavigation"
 },
 {
-    "key": "ctrl+[",
-    "command": "list.toggleKeyboardNavigation",
-    "when": "listFocus && listSupportsKeyboardNavigation"
+"key": "ctrl+[",
+"command": "list.toggleKeyboardNavigation",
+"when": "listFocus && listSupportsKeyboardNavigation"
 },
-
 //----------------------------------------------------------
 // カーソル移動(editor(ui移動はなし))
 //----------------------------------------------------------
 // 入力モードでカーソルを右にずらす
 {
-    "key": "ctrl+l",
-    "command": "cursorRight",
-    "when": "editorTextFocus && !editorReadOnly && vim.mode == 'Insert'"
+"key": "ctrl+l",
+"command": "cursorRight",
+"when": "editorTextFocus && !editorReadOnly && vim.mode == 'Insert'"
 },
 // 入力モードでカーソルを左にずらす
 {
-    "key": "ctrl+h",
-    "command": "cursorLeft",
-    "when": "editorTextFocus && !editorReadOnly && vim.mode == 'Insert'"
+"key": "ctrl+h",
+"command": "cursorLeft",
+"when": "editorTextFocus && !editorReadOnly && vim.mode == 'Insert'"
 },
 {
-    "key": "ctrl+j",
-    "command": "extension.vim_escape",
-    "when": "editorTextFocus && vim.active && vim.mode == 'Insert'"
+"key": "ctrl+j",
+"command": "extension.vim_escape",
+"when": "editorTextFocus && vim.active && vim.mode == 'Insert'"
 },
-
 //----------------------------------------------------------
 // 入力補助系
 //----------------------------------------------------------
 // コメントトグル
 {
-    "key": "ctrl+i ctrl+c",
-    "command": "editor.action.commentLine",
-    "when": "editorFocus && vim.mode == 'Normal'"
+"key": "ctrl+i ctrl+c",
+"command": "editor.action.commentLine",
+"when": "editorFocus && vim.mode == 'Normal'"
 },
 // キャメルケースに変換
 {
-    "key": "ctrl+i ctrl+j",
-    "command": "editor.action.transformToCamelcase",
-    "when": "editorHasSelection"
+"key": "ctrl+i ctrl+j",
+"command": "editor.action.transformToCamelcase",
+"when": "editorHasSelection"
 },
 // スネークケースに変換
 {
-    "key": "ctrl+i ctrl+k",
-    "command": "editor.action.transformToSnakecase",
-    "when": "editorHasSelection"
+"key": "ctrl+i ctrl+k",
+"command": "editor.action.transformToSnakecase",
+"when": "editorHasSelection"
 },
 // ケバブケースに変換
 {
-    "key": "ctrl+i ctrl+l",
-    "command": "editor.action.transformToKebabcase",
-    "when": "editorHasSelection"
+"key": "ctrl+i ctrl+l",
+"command": "editor.action.transformToKebabcase",
+"when": "editorHasSelection"
 },
-
 //----------------------------------------------------------
 // クリップボード取得系
 //----------------------------------------------------------
-
 //----------------------------------------------------------
 // サジェストの選択(ui移動はなし)
 //----------------------------------------------------------
-// サジェストの選択
-{
-    "key": "ctrl+k",
-    "command": "acceptSelectedSuggestion"
-},
 // 候補のフォーカスを下へ移動
 {
-    "key": "ctrl+n",
-    "command": "selectNextSuggestion",
-    "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+"key": "j",
+"command": "selectNextSuggestion",
+"when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
 },
 // 候補のフォーカスを上へ移動
 {
-    "key": "ctrl+p",
-    "command": "selectPrevSuggestion",
-    "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
+"key": "k",
+"command": "selectPrevSuggestion",
+"when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
 },
 // ヒントサジェストを下へ移動
 {
-    "key": "ctrl+n",
-    "command": "showNextParameterHint",
-    "when": "editorTextFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
+"key": "j",
+"command": "showNextParameterHint",
+"when": "editorTextFocus && parameterHintsMultipleSignatures && parameterHintsVisible"
 },
 // リスト系の選択のフォーカスを下へ移動
 {
-    "key": "ctrl+n",
-    "command": "list.focusDown",
-    "when": "listFocus"
+"key": "j",
+"command": "list.focusDown",
+"when": "listFocus"
 },
 // 検索画面の選択のフォーカスを下へ移動
 {
-    "key": "ctrl+n",
-    "command": "search.focus.nextInputBox",
-    "when": "inputBoxFocus && searchViewletVisible"
+"key": "j",
+"command": "search.focus.nextInputBox",
+"when": "inputBoxFocus && searchViewletVisible"
 },
 // サジェストのキャンセル
 {
-    "key": "ctrl+[",
-    "command": "search.action.cancel",
-    "when": "listFocus && searchViewletVisible"
+"key": "escape",
+"command": "search.action.cancel",
+"when": "listFocus && searchViewletVisible"
 },
-
-
 //----------------------------------------------------------
 // 設定画面のみ有効なサジェストの選択(ui移動はなし)
 //----------------------------------------------------------
 // 候補のフォーカスを下へ移動
 {
-    "key": "ctrl+n",
-    "command": "settings.action.focusSettingsFile",
-    "when": "inSettingsSearch"
+"key": "ctrl+n",
+"command": "settings.action.focusSettingsFile",
+"when": "inSettingsSearch"
 },
 // 候補のフォーカスを下へ移動
 {
-    "key": "ctrl+n",
-    "command": "keybindings.editor.focusKeybindings",
-    "when": "inKeybindings && inKeybindingsSearch"
+"key": "ctrl+n",
+"command": "keybindings.editor.focusKeybindings",
+"when": "inKeybindings && inKeybindingsSearch"
 },
 // サジェストのキャンセル
 {
-    "key": "ctrl+[",
-    "command": "settings.action.clearSearchResults",
-    "when": "inSettingsSearch"
+"key": "ctrl+[",
+"command": "settings.action.clearSearchResults",
+"when": "inSettingsSearch"
 },
 // サジェストのキャンセル
 {
-    "key": "ctrl+[",
-    "command": "keybindings.editor.clearSearchResults",
-    "when": "inKeybindings && inKeybindingsSearch"
+"key": "ctrl+[",
+"command": "keybindings.editor.clearSearchResults",
+"when": "inKeybindings && inKeybindingsSearch"
 },
 //----------------------------------------------------------
 // workbenchのクイックオープンの挙動(ui移動はなし)
 //----------------------------------------------------------
 {
-    "key": "ctrl+p",
-    "command": "workbench.action.quickOpen",
+"key": "ctrl+p",
+"command": "workbench.action.quickOpen",
 },
-
 //----------------------------------------------------------
 // サイドバーでのファイル名編集(ui移動はなし)
 //----------------------------------------------------------
 {
-    "key": "ctrl+r",
-    "command": "renameFile",
-    "when": "explorerViewletVisible && filesExplorerFocus"
+"key": "ctrl+r",
+"command": "renameFile",
+"when": "explorerViewletVisible && filesExplorerFocus"
 },
 {
-    "key": "ctrl+h",
-    "command": "workbench.action.toggleSidebarVisibility",
-    // "when": "explorerViewletVisible && filesExplorerFocus"
+"key": "ctrl+h",
+"command": "workbench.action.toggleSidebarVisibility",
+// "when": "explorerViewletVisible && filesExplorerFocus"
 },
 {
-    "key": "ctrl+l",
-    "command": "explorer.openToSide",
-    "when": "explorerViewletVisible && filesExplorerFocus"
+"key": "ctrl+l",
+"command": "explorer.openToSide",
+"when": "explorerViewletVisible && filesExplorerFocus"
 },
 //----------------------------------------------------------
 // vscodeのviewを選択(*->*)
 //----------------------------------------------------------
 {
-    "key": "tab",
-    "command": "editor.emmet.action.expandAbbreviation",
-    // "when": "explorerViewletVisible && !searchViewletVisible && !inDebugMode && vim.mode != 'SearchInProgressMode' && vim.mode != 'Insert'"
-    "when": "explorerViewletVisible && !inDebugMode && vim.mode != 'SearchInProgressMode' && vim.mode != 'Insert'"
+"key": "tab",
+"command": "editor.emmet.action.expandAbbreviation",
+// "when": "explorerViewletVisible && !searchViewletVisible && !inDebugMode && vim.mode != 'SearchInProgressMode' && vim.mode != 'Insert'"
+"when": "explorerViewletVisible && !inDebugMode && vim.mode != 'SearchInProgressMode' && vim.mode != 'Insert'"
 },
 {
-    "key": "g g",
-    "command": "vim.",
-    "when": "editorTextFocus && vim.mode == 'Normal'"
+"key": "g g",
+"command": "vim.",
+"when": "editorTextFocus && vim.mode == 'Normal'"
 },
 {
-    "key": "g g",
-    "command": "cursorTop",
-    "when": "editorTextFocus && vim.mode == 'Normal'"
+"key": "g g",
+"command": "cursorTop",
+"when": "editorTextFocus && vim.mode == 'Normal'"
 },
 {
-    "key": "g b",
-    "command": "cursorBottom",
-    "when": "editorTextFocus && vim.mode == 'Normal'"
+"key": "g b",
+"command": "cursorBottom",
+"when": "editorTextFocus && vim.mode == 'Normal'"
 },
 //----------------------------------------------------------
 // git操作
 //----------------------------------------------------------
 // ワーキングツリーのファイルとして開く
 {
-  "key": "ctrl+g ctrl+w",
-  "command": "gitlens.openWorkingFile",
-  "when": "resourceFilename"
+"key": "ctrl+g ctrl+w",
+"command": "gitlens.openWorkingFile",
+"when": "resourceFilename"
 },
 // ワーキングツリーとの差分を開く
 {
-  "key": "ctrl+g ctrl+d",
-  "command": "gitlens.diffWithWorking",
-  "when": "resourceFilename"
+"key": "ctrl+g ctrl+d",
+"command": "gitlens.diffWithWorking",
+"when": "resourceFilename"
 },
 // 次ヒストリーと比較(右フォーカス時)
 {
-  "key": "ctrl+g ctrl+n",
-  "command": "gitlens.diffWithNext",
-  "when": "resourceFilename"
+"key": "ctrl+g ctrl+n",
+"command": "gitlens.diffWithNext",
+"when": "resourceFilename"
 },
 // 前ヒストリーと比較(左フォーカス時)
 {
-  "key": "ctrl+g ctrl+p",
-  "command": "gitlens.diffWithPrevious",
-  "when": "resourceFilename"
+"key": "ctrl+g ctrl+p",
+"command": "gitlens.diffWithPrevious",
+"when": "resourceFilename"
 },
 // 差分の左右フォーカスをスイッチ
 {
-  "key": "ctrl+g ctrl+f",
-  "command": "workbench.action.compareEditor.focusOtherSide",
-  "when": "textCompareEditorVisible && isInDiffEditor"
+"key": "ctrl+g ctrl+f",
+"command": "workbench.action.compareEditor.focusOtherSide",
+"when": "textCompareEditorVisible && isInDiffEditor"
 },
 // 次の差分へ行移動
 {
-  "key": "ctrl+g ctrl+g ctrl+n",
-  "command": "workbench.action.compareEditor.nextChange",
-  "when": "textCompareEditorVisible && isInDiffEditor"
+"key": "ctrl+g ctrl+g ctrl+n",
+"command": "workbench.action.compareEditor.nextChange",
+"when": "textCompareEditorVisible && isInDiffEditor"
 },
 // 前の差分へ行移動
 {
-  "key": "ctrl+g ctrl+g ctrl+p",
-  "command": "workbench.action.compareEditor.previousChange",
-  "when": "textCompareEditorVisible && isInDiffEditor"
+"key": "ctrl+g ctrl+g ctrl+p",
+"command": "workbench.action.compareEditor.previousChange",
+"when": "textCompareEditorVisible && isInDiffEditor"
 },
 // 現在ファイルをステージングする
 {
-  "key": "ctrl+g ctrl+s",
-  "command": "git.stage",
-  "when": "editorTextFocus && vim.mode == 'Normal'"
+"key": "ctrl+g ctrl+s",
+"command": "git.stage",
+"when": "editorTextFocus && vim.mode == 'Normal'"
 },
 // commit
 {
-  "key": "ctrl+g ctrl+c",
-  "command": "git.commit",
-  "when": "editorTextFocus && vim.mode == 'Normal'"
+"key": "ctrl+g ctrl+c",
+"command": "git.commit",
+"when": "editorTextFocus && vim.mode == 'Normal'"
 },
 //----------------------------------------------------------
 // git操作
 //----------------------------------------------------------
 // 比較先を選択する
 {
-  "key": "ctrl+c ctrl+w",
-  "command": "gitlens.compareWorkingWith",
-  // "command": "gitlens.views.compareWithMergeBase",
-  "when": "editorTextFocus && vim.mode == 'Normal'"
+"key": "ctrl+c ctrl+w",
+"command": "gitlens.compareWorkingWith",
+// "command": "gitlens.views.compareWithMergeBase",
+"when": "editorTextFocus && vim.mode == 'Normal'"
 },
 {
-  "key": "ctrl+c ctrl+c",
-  "command": "git.commitStaged",
-  // "command": "gitlens.views.compareWithMergeBase",
-  "when": "editorTextFocus && vim.mode == 'Normal'"
+"key": "ctrl+c ctrl+c",
+"command": "git.commitStaged",
+// "command": "gitlens.views.compareWithMergeBase",
+"when": "editorTextFocus && vim.mode == 'Normal'"
 },
 {
-    "key": "ctrl+p",
-    "command": "-workbench.action.quickOpen"
-}
+"key": "ctrl+p",
+"command": "-workbench.action.quickOpen"
+},
+{
+"key": "escape",
+"command": "closeReferenceSearch",
+"when": "referenceSearchVisible"
+},
+{
+"key": "escape",
+"command": "hideSuggestWidget",
+"when": "suggestWidgetVisible"
+},
 //----------------------------------------------------------
 // 未分類
-//----------------------------------------------------------
-]
