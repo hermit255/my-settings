@@ -35,6 +35,12 @@
 "command": "workbench.action.keepEditor",
 "when": "editorTextFocus && editorPinned == false"
 },
+// 対応したhtmlタグにジャンプ
+{
+"key": "ctrl+m ctrl+t",
+"command": "editor.emmet.action.matchTag",
+"when": "editorTextFocus"
+},
 //----------------------------------------------------------
 // タブ
 //----------------------------------------------------------
