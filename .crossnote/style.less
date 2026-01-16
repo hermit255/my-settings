@@ -1,0 +1,60 @@
+// Custom CSS for Markdown Preview Enhanced
+
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+.markdown-preview.markdown-preview {
+  // modify your style here
+  // eg: background-color: blue;
+  h2 {
+    border-bottom: thin solid #000;
+    text-align: center;
+    padding: 0.3em;
+  }
+  h3 {
+    border-bottom: thin solid #ccc;
+    padding-bottom: 0.3em;
+  }
+
+  // Add numbered headings
+  // body{
+  //   counter-reset: chapter;
+  // }
+  h1{
+    counter-reset: sub-chapter;
+  }
+  h2{
+    counter-reset: section;
+  }
+  h3{
+    counter-reset: sub-section;
+  }
+  h4{
+    counter-reset: sub-sub-section;
+  }
+  h1::before{
+    counter-increment: chapter;
+    content: counter(chapter) ". ";
+  }
+  h2::before{
+    counter-increment: sub-chapter;
+    // content: counter(chapter) "." counter(sub-chapter) ". ";
+    // content: counter(sub-chapter) ". ";
+  }
+  h3::before{
+    counter-increment: section;
+    // content: counter(chapter) "." counter(sub-chapter) "." counter(section) ". ";    
+    content: counter(section) ". ";    
+  }
+  h4::before{
+    counter-increment: sub-section;
+    // content: counter(chapter) "." counter(sub-chapter) "." counter(section) "." counter(sub-section) ".";    
+    content: counter(section) "-" counter(sub-section) ".";    
+  }
+  h5::before{
+    counter-increment: sub-sub-section;
+    // content: counter(chapter) "." counter(sub-chapter) "." counter(section) "." counter(sub-section) "." counter(sub-sub-section) ".";    
+    content: counter(section) "-" counter(sub-section) "-" counter(sub-sub-section) ".";    
+  }
+
+}
