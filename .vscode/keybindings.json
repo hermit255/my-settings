@@ -276,12 +276,6 @@
 "command": "list.focusDown",
 "when": "listFocus"
 },
-// 検索画面の選択のフォーカスを下へ移動
-{
-"key": "j",
-"command": "search.focus.nextInputBox",
-"when": "inputBoxFocus && searchViewletVisible"
-},
 // サジェストのキャンセル
 {
 "key": "escape",
