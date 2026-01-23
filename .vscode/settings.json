@@ -20,12 +20,12 @@
         "diffEditor.removedLineBackground": "#ff000015",  // 削除行：ごく薄い赤
 
         // --- 変更があった具体的な箇所 (濃いめ・クッキリ) ---
-        "diffEditor.insertedTextBackground": "#00ff0050", // 追加箇所：はっきりした緑
-        "diffEditor.removedTextBackground": "#ff000050",  // 削除箇所：はっきりした赤
+        "diffEditor.insertedTextBackground": "#00ff0060", // 追加箇所：より明るい緑
+        "diffEditor.removedTextBackground": "#ff000060",  // 削除箇所：より明るい赤
 
         // (任意) 境界線を付けてさらに強調する場合
-        "diffEditor.insertedTextBorder": "#00ff00aa",
-        "diffEditor.removedTextBorder": "#ff0000aa"
+        // "diffEditor.insertedTextBorder": "#00ff00aa",
+        // "diffEditor.removedTextBorder": "#ff0000aa"
     },
     // Git拡張機能の設定
     "git.confirmSync": false,
