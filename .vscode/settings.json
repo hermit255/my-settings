@@ -1,4 +1,8 @@
 {
+    // クリップボード画像を保存してMarkdown画像リンクで貼り付ける
+    "markdown.editor.filePaste.enabled": true,
+    "markdown.editor.filePaste.copyIntoWorkspace": "mediaFiles",
+    "editor.pasteAs.enabled": true,
     // markdown画像貼り付け時保存先
     "markdown.copyFiles.destination": {
         "**/*": "${documentDirName}/img/${documentBaseName}-${unixTime}.${fileExtName}"
@@ -11,7 +15,6 @@
     // Vim拡張機能の設定
     "vim.highlightedyank.enable": true,
     "vim.useSystemClipboard": true,
-    "vim.useSystemClipboard": true, // クリップボードを使用する
     "vim.hlsearch": true, // 検索結果をハイライトする
     // Diffエディタのカスタマイズ設定
     "workbench.colorCustomizations": {
