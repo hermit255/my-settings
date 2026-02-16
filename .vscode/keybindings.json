@@ -54,9 +54,9 @@
 "when": "editorTextFocus"
 },
 {
-  "key": "escape",
-  "command": "closeReferenceSearch",
-  "when": "!config.editor.stablePeek"
+"key": "escape",
+"command": "closeReferenceSearch",
+"when": "editorTextFocus && referenceSearchVisible && !config.editor.stablePeek || referenceSearchVisible && !config.editor.stablePeek && !inputFocus"
 },
 //----------------------------------------------------------
 // タブ
