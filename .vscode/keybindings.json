@@ -5,18 +5,30 @@
 // IF実装箇所にコードジャンプ
 {
 "key": "ctrl+j ctrl+i",
-"command": "editor.action.goToImplementation",
+"command": "editor.action.peekImplementation",
 "when": "editorFocus"
 },
 // 宣言箇所に移動
 {
 "key": "ctrl+j ctrl+d",
-"command": "editor.action.goToDeclaration",
+"command": "editor.action.peekDefinition",
+"when": "editorFocus"
+},
+// 型定義
+{
+"key": "ctrl+j ctrl+t",
+"command": "editor.action.peekTypeDefinition",
+"when": "editorFocus"
+},
+// 参照箇所表示
+{
+"key": "ctrl+j ctrl+r",
+"command": "editor.action.referenceSearch.trigger",
 "when": "editorFocus"
 },
 {
-"key": "ctrl+j ctrl+r",
-"command": "editor.action.goToReferences",
+"key": "ctrl+j ctrl+l",
+"command": "editor.action.peekLocations",
 "when": "editorFocus"
 },
 // find --name検索
@@ -40,6 +52,11 @@
 "key": "ctrl+m ctrl+t",
 "command": "editor.emmet.action.matchTag",
 "when": "editorTextFocus"
+},
+{
+  "key": "escape",
+  "command": "closeReferenceSearch",
+  "when": "!config.editor.stablePeek"
 },
 //----------------------------------------------------------
 // タブ
@@ -187,19 +204,6 @@
 "when": "aichatPosition"
 },
 //----------------------------------------------------------
-// sidebarの検索キャンセル(*->terminal)
-//----------------------------------------------------------
-{
-"key": "Escape",
-"command": "list.toggleKeyboardNavigation",
-"when": "listFocus && listSupportsKeyboardNavigation"
-},
-{
-"key": "ctrl+[",
-"command": "list.toggleKeyboardNavigation",
-"when": "listFocus && listSupportsKeyboardNavigation"
-},
-//----------------------------------------------------------
 // カーソル移動(editor(ui移動はなし))
 //----------------------------------------------------------
 // 入力モードでカーソルを右にずらす
@@ -279,7 +283,7 @@
 // サジェストのキャンセル
 {
 "key": "escape",
-"command": "search.action.cancel",
+"command": "search.action.cancel && hideSuggestWidget",
 "when": "listFocus && searchViewletVisible"
 },
 //----------------------------------------------------------
@@ -443,16 +447,5 @@
 {
 "key": "ctrl+p",
 "command": "-workbench.action.quickOpen"
-},
-{
-"key": "escape",
-"command": "closeReferenceSearch",
-"when": "referenceSearchVisible"
-},
-{
-"key": "escape",
-"command": "hideSuggestWidget",
-"when": "suggestWidgetVisible"
-},
-//----------------------------------------------------------
-// 未分類
+}
+]
